@@ -42,7 +42,7 @@
 
 -   Generate uniqueID automatically for each item
 -   Create User management roles
--   Use Application Performance Monitoring
+-   Use Application Performance Monitoring (Sentry)
 
 
 ## Access Website Online
