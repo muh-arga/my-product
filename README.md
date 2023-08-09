@@ -12,6 +12,7 @@
 -   Setup database connection on `.env`
 -   Add `SENTRY_LARAVEL_DSN=https://2fa46660d60a67e7d34ca8de7597ddf5@o4505675115855872.ingest.sentry.io/4505675116969984` to your `.env`
 -   Run `php artisan key:generate` command
+-   Run `php artisan migrate --seed` command
 -   Run `php artisan serve` command
 -   Done
 
