@@ -77,7 +77,7 @@
                                                                     @csrf
                                                                     @method('DELETE')
                                                                     <button class="btn btn-sm btn-danger"
-                                                                        data-confirm="Delete product?|Do you want to continue?"
+                                                                        data-confirm="Delete product?|The product will be deleted. Do you want to continue?"
                                                                         data-confirm-yes="submitForm({{ $product->id }})">Delete</button>
                                                                 </form>
                                                             </div>

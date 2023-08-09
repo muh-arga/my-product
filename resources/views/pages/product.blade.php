@@ -37,7 +37,7 @@
                                             </div>
                                             <h3>{{ $product->name }}</h3>
                                             <div
-                                                class="d-flex flex-md-row flex-column justify-content-between col-md-6 col-12 p-0 mb-4">
+                                                class="d-flex flex-md-row flex-column justify-content-between col-md-8 col-12 p-0 mb-4">
                                                 <span>Unique ID: {{ $product->unique_id }}</span>
                                                 <span class="mt-md-0 mt-3">SKU: {{ $product->sku }}</span>
                                             </div>

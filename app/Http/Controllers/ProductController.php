@@ -79,7 +79,6 @@ class ProductController extends Controller
         $product->update([
             'name' => $request->name,
             'sku' => $sku,
-            'unique_id' => uniqid() . '-' . $sku,
             'description' => $request->description,
             'specification' => $request->specification
         ]);

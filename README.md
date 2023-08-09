@@ -37,4 +37,8 @@
 
         Feature : show product
 
-    
+## Bonus Task
+
+-   Generate uniqueID automatically for each item
+-   Create User management roles
+-   Use Application Performance Monitoring (Sentry)
