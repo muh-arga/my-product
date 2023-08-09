@@ -5,7 +5,7 @@
 ## Quick start
 
 -   Clone the repo: `git clone https://github.com/muh-arga/my-product.git`
--   Run `cd` to the newly created `/laravel-stisla` directory
+-   Run `cd` to the newly created `/my-product` directory
 -   Run `composer install` command
 -   Run `npm install` command
 -   Run `cp .env.example .env` command
