@@ -33,7 +33,7 @@
                                         <div class="input-group mb-3">
                                             <input type="text" name="search" class="form-control"
                                                 placeholder="Search by Name | Unique ID | SKU"
-                                                value={{ request()->get('search') }}>
+                                                value="{{ request()->get('search') }}">
                                             <button type="submit" class="input-group-text"><i
                                                     class="fas fa-search"></i></button>
                                         </div>

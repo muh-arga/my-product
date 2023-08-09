@@ -33,7 +33,7 @@
                                         class="col-md-4 col-12">
                                         <div class="input-group mb-3">
                                             <input type="text" name="search" class="form-control"
-                                                placeholder="Search by Name | Email" value={{ request()->get('search') }}>
+                                                placeholder="Search by Name | Email" value="{{ request()->get('search') }}">
                                             <button type="submit" class="input-group-text"><i
                                                     class="fas fa-search"></i></button>
                                         </div>
