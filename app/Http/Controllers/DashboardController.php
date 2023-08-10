@@ -11,7 +11,11 @@ class DashboardController extends Controller
     public function home()
     {
         $products = Product::all();
-        $users = User::where('role', 'user')->get();
+        if (auth()->user()->role == 'superadmin') {
+            $users = User::where('role', '!=', 'superadmin')->get();
+        } else {
+            $users = User::where('role', 'user')->get();
+        }
         return view('pages.dashboard', ['type_menu' => 'dashboard', 'products' => $products, 'users' => $users]);
     }
 }
