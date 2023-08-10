@@ -52,7 +52,28 @@
                                         </div>
                                     @endif
                                 </div>
-
+                                @can('isSuperAdmin')
+                                    <div class="form-group">
+                                        <label for="role">Role</label>
+                                        <select
+                                            class="form-control @error('role') is-invalid
+                                        @enderror"
+                                            name="role" required>
+                                            <option value="">-- Select Role --</option>
+                                            <option value="admin" {{ old('role') == 'admin' ? 'selected' : '' }}>
+                                                Admin
+                                            </option>
+                                            <option value="user" {{ old('role') == 'user' ? 'selected' : '' }}>
+                                                User
+                                            </option>
+                                        </select>
+                                        @if ($errors->has('role'))
+                                            <div class="invalid-feedback">
+                                                {{ $errors->first('role') }}
+                                            </div>
+                                        @endif
+                                    </div>
+                                @endcan
                                 <div class="form-group">
                                     <label for="password" class="d-block">Password</label>
                                     <input id="password" type="password"

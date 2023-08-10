@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                             <div class="card-footer text-right">
-                                <a href="{{ route('user.index') }}" class="btn btn-warning">Back</a>
+                                <a href="{{ route('user.index') }}" class="btn btn-warning"><i class="fas fa-arrow-left mr-2"></i>Back</a>
                                 <button class="btn btn-primary">Submit</button>
                             </div>
                         </form>

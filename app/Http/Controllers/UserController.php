@@ -36,9 +36,16 @@ class UserController extends Controller
             return redirect()->back()->withErrors($validate->errors())->withInput();
         }
 
+        $role = 'user';
+
+        if (auth()->user()->role == 'superadmin') {
+            $role = $request->role;
+        }
+
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'role' => $role,
             'password' => Hash::make($request->password),
         ]);
 
